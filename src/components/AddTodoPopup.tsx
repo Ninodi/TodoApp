@@ -58,13 +58,13 @@ function AddTodoPopup({onClose} : {onClose: () => void}) {
         <div id="popup">
             <div className="input-container">
                 <label htmlFor="Title">Title</label>
-                <input type="text" name='Title' value={title} onChange={(e) => setTitle(e.target.value)}/>
+                <input type="text" name='Title' id='title' value={title} onChange={(e) => setTitle(e.target.value)}/>
             </div>
             <div className="input-container">
                 <label htmlFor="Description">Description</label>
-                <input type="text" name='Description' value={descr} onChange={(e) => setDescr(e.target.value)}/>
+                <textarea name='Description' id='descr' value={descr} onChange={(e) => setDescr(e.target.value)}/>
             </div>
-            <button id='add-todo' onClick={addTodo}>Add Todo</button>
+            <button id='add-todo' onClick={addTodo}>{selectedTodo === 'none' ? "Add Todo" : 'Edit Todo'}</button>
         </div>
     </div>
   )
