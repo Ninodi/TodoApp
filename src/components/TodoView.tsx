@@ -9,7 +9,7 @@ import { addTodos } from '../store/todo/todo.slice'
 function TodoView() {
   const allTodos = useSelector((state: RootState) => state.todos.todos)
   const [activeTodo, setActiveTodo] = useState<string | null>(null)
-  const {fetchData, data} = useFetch({endpoint: 'todos'})
+  const {fetchData} = useFetch({endpoint: 'todos'})
   const dispatch: AppDispatch = useDispatch()
 
   const handleSetActive = (id: string) => {
@@ -28,9 +28,6 @@ function TodoView() {
 
   }, [dispatch, fetchData])
 
-  useEffect(() => {
-    console.log('heeu')
-  })
 
   return (
     <div className='todos-container'>

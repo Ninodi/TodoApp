@@ -12,7 +12,7 @@ function AddTodoPopup({onClose} : {onClose: () => void}) {
   const dispatch: AppDispatch = useDispatch()
   const {sendRequest} = useRequest()
   const selectedTodo = useSelector((state: RootState) => state.selectedTodo.selectedTodo)
-  const {fetchData, data: todos} = useFetch({endpoint: 'todos'})
+  const {data: todos} = useFetch({endpoint: 'todos'})
   const currSelectedTodo = todos?.find(each => each._uuid === selectedTodo)
  
 

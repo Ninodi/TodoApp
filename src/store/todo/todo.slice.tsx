@@ -3,7 +3,7 @@ import { ITodo } from '../../interface'
 
 
 interface TodosState {
-    todos: ITodo[];
+    todos: ITodo[]
   }
   
   const initialState: TodosState = {

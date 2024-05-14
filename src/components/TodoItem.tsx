@@ -5,8 +5,7 @@ import { toggleTodoPopup } from '../store/popup/popup.slice';
 import { ITodo } from '../interface';
 import { selectTodo } from '../store/selectedTodo/selectedTodo.slice';
 import useRequest from '../hooks/useRequest';
-import { addTodos, updateTodo } from '../store/todo/todo.slice';
-import useFetch from '../hooks/useFetch';
+import { addTodos} from '../store/todo/todo.slice';
 
 interface ITodoProps extends ITodo {
   active: boolean
