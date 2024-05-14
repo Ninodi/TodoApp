@@ -30,7 +30,6 @@ function AddTodoPopup({onClose} : {onClose: () => void}) {
         const data = {
           title: title,
           descr: descr,
-          status: false,
         }
 
         //if selectedTodo is NOT none then show the update screen for todo
