@@ -9,7 +9,7 @@ function useFetch({endpoint} : {endpoint: string} ) {
         const headers = {
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`
+                "Authorization": `Bearer OIG5JZB2Ij_W3ZixNXldoWOwYAbUNDEWxH-Xd7RG5yd9PL7Ngw`
             }
         }
         
